@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Manrope';
+    background-color: hsl(210, 46%, 95%);
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    width: 900px;
+    text-align: center;
+    margin: 8% 22%;
+    border-radius: 15px;
+
+}
+
+.main-img{
+    width: 400px;
+}
+
+.card-img{
+    width: 400px;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    
+}
+
+.card-info{
+    width: 450px;
+    margin-right: 20px;
+    padding: 60px;
+    text-align: start;
+}
+
+.people{
+    display: flex;
+}
+
+.person{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 420px;
+}
+
+.card-h1{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    font-style:normal;
+    color: hsl(217, 19%, 35%);
+    width: 420px;
+}
+
+.card-para{
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 24px;
+    color: hsl(214, 17%, 51%);
+    margin: 25px 0px;
+    width: 420px;
+}
+
+.person-img{
+    border-radius: 100%;
+    height: 50px;
+}
+
+.person-info{
+    margin-left: 25px;
+}
+
+.person-h2{
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 24px;
+    color: hsl(217, 19%, 35%);
+}
+
+.person-para{
+    font-weight: 500;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 24px;
+    color: hsl(214, 17%, 51%);
+    margin-top: 10px;
+
+}
+
+.person-btn{
+    border-radius: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-img{
+    height: 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.share{
+    display: none;
+}
+
+.icon {   
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+    margin-top: -70px;
+    margin-left: -110px;
+}
+
+.share-h3{
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: hsl(210, 46%, 95%);
+}
+
+.foot, .foot a{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: hsl(217, 19%, 35%);
+
+}
+
+
+.foot a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:1250px) {
+    .card{
+        margin: 8% 5%;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .card{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:920px){
+
+
+    .card-img, .main-img{
+        width: 500px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .card{
+        width: 500px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+    }
+
+    .card-info{
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .icon{
+        width: 500px;
+        margin-top: 0px;
+        margin-left: -401px;
+        border-radius: 0px 0px 15px 15px;
+        padding: 25px;
+        justify-content: start;
+    }
+
+    .person-btn{
+        z-index: 1;
+        background-color: white;
+    }
+
+    .share-img{
+        padding: 0px 35px;
+    }
+
+}
+
+@media screen and (max-width:610px) {
+    .card{
+        margin-left: 20px;
+    }
+}
